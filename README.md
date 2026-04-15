@@ -19,6 +19,12 @@ Codex and Claude come pre-installed. Bring your own experiment, or start from th
 ## Quick Showcase
 https://github.com/user-attachments/assets/bb4982fd-7c59-4604-b015-1fd47e686bda
 
+## Prerequisities
+Git https://github.com/git-guides/install-git <br>
+Docker https://www.docker.com/get-started/ <br>
+Claude Account https://claude.ai/login OR  
+Codex Account https://openai.com/sk-SK/codex/ 
+
 ## Installation
 
 ```bash
@@ -29,9 +35,9 @@ docker compose up
 
 ## Workflow
 1. There is already a default seed prepared with diabetes classification as [experiment](https://github.com/qriostech/cdchealth). When you want to use your experiment modify it to conform to coresearch [guidelines](https://github.com/qriostech/guidelines/blob/main/coresearch/guidelines/guidelines_v004.md) (ask agent to do it) and import it using the new seed button.
-2. Visit http://127.0.0.1:5173 , click new seed and add the repository details. (You may use  to create seed to quickstart)
-3. Create a branch or branches. Session will pop up in the left sidebar. (session is a terminal instance on a runner, right now sessions are created using tmux)
-4. Go into the session. Invoke the agent (codex and claude are pre-installed) and tell him to start the experiment.
+2. Visit http://127.0.0.1:5173 , click **new seed** and add the repository details. (You may use  to create seed to quickstart)
+3. **Create a branch** or branches. Session will pop up in the left sidebar. (session is a terminal instance on a runner, right now sessions are created using tmux). 
+4. Go into the session or click on **attach terminal**. Invoke the agent (codex and claude are pre-installed), by typing "claude" or "codex" in terminal, press enter, login, and tell him to start the experiment.
 5. Wait, inspect metrics, visuals, diffs. 
 6. When you like something fork it. It creates a new session where you have the opportunity to let the agent continue the experiment but tweak what are trying to achieve. (tell him to start the experiment but optimize only accept iterations with recall higher than 0.9)
 7. When something looks really good remember to test it out of sample if you are optimizing a problem where it is relevant. (You can optimize some code for execution speed)
